@@ -1,5 +1,7 @@
 # caGAN-SIM
 
+## Advanced Machine Learning Final Project
+
 **caGAN-SIM software** is a tensorflow implementation for deep learning-based 3D-SIM reconstruction. This repository is developed based on the 2021 IEEE JSTQE paper [**3D Structured Illumination Microscopy via Channel Attention Generative Adversarial Network**](https://doi.org/10.1109/JSTQE.2021.3060762).<br>
 
 Author: Chang Qiao<sup>1,#</sup>, Xingye Chen<sup>1,#</sup>, Siwei Zhang<sup>2,#</sup>, Di Li<sup>2,3</sup>, Yuting Guo<sup>2,3</sup>, Qionghai Dai<sup>1,+</sup>, Dong Li<sup>2,3,4,+</sup><br>
