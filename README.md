@@ -71,6 +71,7 @@ Our training environment is as below:
 ## Test pre-trained models
 
 - Place your testing data in `./dataset/test`
+- Download [pre-trained model](https://gofile.io/d/hlMyWd) and place it under `./trained_models/[save_weights_name]`
 - Open your terminal and cd to `./src`
 - Run `bash demo_predict.sh` in your terminal. Note that before running the bash file, you should check if the data paths and other arguments in `demo_predict.sh` are set correctly
 - The output reconstructed SR images will be saved in `--data_dir`
