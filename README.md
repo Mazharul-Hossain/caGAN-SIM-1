@@ -2,15 +2,9 @@
 
 - forked from [qc17-THU/caGAN-SIM](https://github.com/qc17-THU/caGAN-SIM)
 
-**caGAN-SIM software** is a tensorflow implementation for deep learning-based 3D-SIM reconstruction. This repository is developed based on the 2021 IEEE JSTQE paper [**3D Structured Illumination Microscopy via Channel Attention Generative Adversarial Network**](https://doi.org/10.1109/JSTQE.2021.3060762).<br>
+**caGAN-SIM modified software** is a tensorflow implementation for deep learning-based 3D-SIM reconstruction. This repository is modiefied from a development based on the 2021 IEEE JSTQE paper [**3D Structured Illumination Microscopy via Channel Attention Generative Adversarial Network**](https://doi.org/10.1109/JSTQE.2021.3060762).<br>
 
-Author: Chang Qiao<sup>1,#</sup>, Xingye Chen<sup>1,#</sup>, Siwei Zhang<sup>2,#</sup>, Di Li<sup>2,3</sup>, Yuting Guo<sup>2,3</sup>, Qionghai Dai<sup>1,+</sup>, Dong Li<sup>2,3,4,+</sup><br>
-<sup>1</sup>Department of Automation, Tsinghua University, Beijing, China.<br>
-<sup>2</sup>National Laboratory of Biomacromolecules, CAS Center for Excellence in Biomacromolecules, Institute of Biophysics, Chinese Academy of Sciences, Beijing, China.<br>
-<sup>3</sup>College of Life Sciences, University of Chinese Academy of Sciences, Beijing, China.<br>
-<sup>4</sup>Bioland Laboratory, Guangzhou Regenerative Medicine and Health Guangdong Laboratory, Guangzhou, China.<br>
-<sup>#</sup>Equal contribution.  
-<sup>+</sup>Correspondence to: qhdai@tsinghua.edu.cn and lidong@ibp.ac.cn
+<sup>3</sup>University of Memphis, TN, USA.<br>
 
 ## Contents
 
@@ -92,19 +86,3 @@ Our training environment is as below:
 
 This repository is released under the MIT License (refer to the LICENSE file for details).
 
-## Citation
-
-If you find the code helpful in your research, please cite the following paper:
-
-```
-@article{qiao20213d,
-  title={3D Structured Illumination Microscopy via Channel Attention Generative Adversarial Network},
-  author={Qiao, Chang and Chen, Xingye and Zhang, Siwei and Li, Di and Guo, Yuting and Dai, Qionghai and Li, Dong},
-  journal={IEEE Journal of Selected Topics in Quantum Electronics},
-  volume={27},
-  number={4},
-  pages={1--11},
-  year={2021},
-  publisher={IEEE}
-}
-```
