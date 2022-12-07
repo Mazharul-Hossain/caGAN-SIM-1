@@ -4,7 +4,7 @@
 
 **caGAN-SIM modified software** is a tensorflow implementation for deep learning-based 3D-SIM reconstruction. This repository is modiefied from a development based on the 2021 IEEE JSTQE paper [**3D Structured Illumination Microscopy via Channel Attention Generative Adversarial Network**](https://doi.org/10.1109/JSTQE.2021.3060762).<br>
 
-<sup>3</sup>University of Memphis, TN, USA.<br>
+University of Memphis, TN, USA.<br>
 
 ## Contents
 
