@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/env bash
 
 # ------------------------------- arguments for 3D model -------------------------------
 # --gpu_id: the gpu device you want to use in current task
@@ -31,13 +31,18 @@
 # --wave_len: wave length of excitation light, defining the OTF used for WF-loss calculation
 
 # ------------------------------- train a 3D caGAN model -------------------------------
-python train_caGAN_3d.py --gpu_id '4' --gpu_memory_fraction 0.3 --mixed_precision_training 1 \
-                         --data_dir "../dataset/train/F-actin_3D" \
+eval "$(conda shell.bash hook)"
+conda activate caGAN_SIM
+
+python train_caGAN_3d.py --data_dir "../dataset/3D_SIM_Dataset" \
                          --save_weights_dir "../trained_models/3d" \
-                         --patch_y 64 --patch_x 64 --patch_z 11 --input_channels 15 \
-                         --scale_factor 2 --iterations 200000 --sample_interval 200 \
-                         --validate_interval 500 --validate_num 200 --batch_size 2 \
+                         --patch_y 64 --patch_x 64 --patch_z 17 --input_channels 15 \
+                         --scale_factor 2 --iterations 100 --sample_interval 5 \
+                         --validate_interval 5 --validate_num 200 --batch_size 2 \
                          --d_start_lr 1e-6 --g_start_lr 1e-4 --lr_decay_factor 0.5 \
-                         --train_discriminator_times 1 --train_generator_times 3 \
-                         --load_weights 0 --model_name "caGAN3D" --optimizer_name "adam" \
-                         --weight_wf_loss 0.05 --wave_len 488
+                         --train_discriminator_times 2 --train_generator_times 1 \
+                         --load_weights 1 --model_name "caGAN3D" --optimizer_name "adam" \
+                         --weight_wf_loss 0.05 --wave_len 488 \
+                         --n_ResGroup 5 --n_RCAB 8
+
+conda deactivate
